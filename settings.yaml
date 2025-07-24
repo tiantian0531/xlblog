@@ -1,0 +1,32 @@
+system:
+  host: "0.0.0.0"
+  port: 8080
+  env: "dev"
+mysql:
+  prefix: ""
+  host: "localhost"
+  port: "3306"
+  config: "parseTime=true"
+  db-name: "apevoloMaster"
+  username: "root"
+  password: "123456"
+  engine: ""
+  log-mode: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  singular: false
+  log-zap: true
+redis:
+  addr: redis-dev.default.svc.cluster.local:6379
+  password: "gaVEHR3V7qiY"
+  db: 1
+zap:
+  level: info
+  prefix:  '[xl-blog]'
+  format: console
+  director: logs
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  max-age: 0
+  show-line: true
+  log-in-console: true
